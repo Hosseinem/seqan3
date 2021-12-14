@@ -20,7 +20,7 @@ only these minimal k-mers the storage cost is significantly reduced while mainta
 # Minimiser Workflow
 
 Because minimisers are minimal k-mers, they depend on a given k-mer size, a given shape (specifying which positions
-should be considered) and a window size, which has to be greater or equal than the k-mer size. If all these values are
+should be considered) and a window size, which has to be greater or equal to the k-mer size. If all these values are
 given, then the minimisers can be obtained by determining all k-mers in the forward and in the backward strand for one
 window. Only the lexicographically smallest k-mer in one window is saved, then the window is shifted by one and the
 procedure is repeated until all windows have been processed. If two consecutive windows share the same minimiser, it is

@@ -2,7 +2,7 @@
 
 ***Learning Objective:***
 
-In this tutorial we look at alphabets and you will learn how to work with nucleotides and amino acids in SeqAn.
+In this tutorial, we look at alphabets and you will learn how to work with nucleotides and amino acids in SeqAn.
 We guide you through the most important properties of SeqAn's alphabets and show you the different implemented types.
 After completion, you will be able to use the alphabets inside of STL containers and to compare alphabet values.
 
@@ -17,7 +17,7 @@ as well as a code basis for your own program development.
 # Introduction
 
 An alphabet is the set of symbols of which a biological sequence – or in general a text – is composed.
-SeqAn implements specific and optimised alphabets not only for sequences of RNA, DNA and protein components,
+SeqAn implements specific and optimised alphabets not only for sequences of RNA, DNA and protein components
 but also for quality, secondary structure and gap annotation as well as combinations of the aforementioned.
 
 \assignment{Task}
@@ -36,7 +36,7 @@ For instance, the alphabet seqan3::dna5 represents five entities as it contains 
 to refer to an unknown nucleotide.
 
 ## Construction and assignment of alphabet symbols
-Let's look at some example code which demonstrates how objects of the seqan3::dna4 alphabet are assigned
+Let's look at some example code that demonstrates how objects of the seqan3::dna4 alphabet are assigned
 from characters.
 
 \snippet alphabet_main.cpp create
@@ -161,7 +161,7 @@ We distinguish between three types:
    that a nucleobase was recorded incorrectly. The characters are most commonly found in FASTQ files.
    See \ref alphabet_quality for details.
 2. **RNA structure alphabets**. They describe RNA nucleobases as unpaired or up-/downstream paired and can be found
-   in annotated RNA sequence and alignment files (e.g. Stockholm format). Currently we provide the
+   in annotated RNA sequence and alignment files (e.g. Stockholm format). Currently, we provide the
    [Dot Bracket](\ref seqan3::dot_bracket3) and [WUSS](\ref seqan3::wuss) formats.
 3. **Protein structure alphabet**. The [DSSP](\ref seqan3::dssp9) format represents secondary structure elements like
    alpha helices and turns.
