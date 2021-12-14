@@ -17,7 +17,7 @@ as well as a code basis for your own program development.
 # Introduction
 
 An alphabet is the set of symbols of which a biological sequence – or in general a text – is composed.
-SeqAn implements specific and optimised alphabets not only for sequences of RNA, DNA and protein components,	
+SeqAn implements specific and optimised alphabets not only for sequences of RNA, DNA and protein components,
 but also for quality, secondary structure and gap annotation as well as combinations of the aforementioned.
 
 \assignment{Task}
