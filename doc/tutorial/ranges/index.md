@@ -232,7 +232,7 @@ are not stored in memory at all.
 
 We provide overview tables for all our view adaptors that document which concepts are modelled by the views they return.
 
-## Views in the standard library and SeqAn
+## Views in the standard library and in SeqAn
 
 The standard library in C++20 provides a number of useful views and SeqAn provides many views, as well.
 Most views provided by SeqAn3 are specific to biological operations, like seqan3::views::trim_quality which trims sequences

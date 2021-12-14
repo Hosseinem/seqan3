@@ -71,7 +71,7 @@ You can also index text collections (e.g. genomes with multiple chromosomes or p
 
 \snippet doc/tutorial/search/search_small_snippets.cpp text_collection
 
-The indices can also be stored and loaded from the disk by using cereal.
+The indices can also be stored and loaded from disk by using cereal.
 
 \snippet doc/tutorial/search/search_small_snippets.cpp store
 

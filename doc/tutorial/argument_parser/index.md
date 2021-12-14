@@ -193,7 +193,7 @@ of your application to understand how the option is affecting your program.
 `add_positional_option()` will be linked to the first command line argument that is neither an option-value pair nor a 
 flag. So the order of initialising your parser determines the order of assigning command line arguments to the 
 respective variables.
-We personally recommend always using regular options (id-value pairs) because they are more expressive and it is easier
+We personally recommend to always use regular options (id-value pairs) because they are more expressive and it is easier
 to spot errors.
 
 You can add an option like this:
@@ -374,7 +374,7 @@ Option -n/--name is required but not set.
 Additionally to the *required* tag, there is also the possibility of **declaring an option as advanced or hidden**.
 
 Set an option/flag to advanced, if you do not want the option to be displayed in the normal help page (`-h/--help`). 
-Instead, the advanced options are only displayed when calling `-hh/--advanced-help`. This can be helpful if you want to
+Instead, the advanced options are only displayed when calling `-hh/--advanced-help`. This can be helpful, if you want to
 avoid bloating your help page with too much information for inexperienced users of your application, but still provide 
 thorough information on demand.
 
@@ -473,7 +473,7 @@ SeqAn offers two file validator types: the seqan3::input_file_validator and the 
 On construction, the validator receives a list (vector) of valid file extensions that are tested against the extension
 of the parsed option value.
 The validator throws a seqan3::validation_error exception whenever a given filename's extension is not in the
-given list of valid extensions. In addition, the seqan3::input_file_validator checks if the file exist, is a regular
+given list of valid extensions. In addition, the seqan3::input_file_validator checks if the file exists, is a regular
 file and is readable.
 Moreover, you have to add an additional flag seqan3::output_file_open_options to the seqan3::output_file_validator,
 which you can use to indicate whether you want to allow the output files to be overwritten.
