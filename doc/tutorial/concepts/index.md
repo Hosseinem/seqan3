@@ -19,7 +19,7 @@ your own concepts, we recommend:
 One central design goal of SeqAn is to provide generic algorithms and data structures that can be used for different
 types without reimplementing the same algorithms over and over again for particular types.
 This has multiple benefits: improved maintainability due to an additional level of abstraction
-and more importantly, the ability to reuse the code with user provided types.
+and, more importantly, the ability to reuse the code with user provided types.
 A familiar example for generic code is std::vector and the algorithms in the standard library.
 They are *templates* which means that they can be *instantiated* with other types.
 Most often the type cannot be arbitrary, because the template expects a particular interface from the type.
@@ -246,7 +246,7 @@ if a numeric argument is an integral square (i.e. the user shall only be allowed
 
 ### Understanding the requirements
 
-In the previous section, you analysed seqan3::validator.
+You analysed seqan3::validator in the previous section.
 Do you understand the requirements formulated on that page?
 
 \hint

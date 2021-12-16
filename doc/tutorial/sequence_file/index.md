@@ -247,7 +247,7 @@ If no 10 records are available any more, it will just print the remaining record
 
 ## Applying a filter to a file
 
-On some occasions you are only interested in sequence records that fulfill a certain criteria,
+On some occasions, you are only interested in sequence records that fulfill a certain criteria,
 e.g. having a minimum sequence length or a minimum average quality.
 Just like in the example with *ranges::view::chunk* you can use *std::ranges::filter* for this purpose:
 
@@ -328,7 +328,7 @@ The file `output.fastq` should contain the following records:
 
 Again we want to point out the convenient advantage of modelling files as ranges. The seqan3::sequence_file_input models
 std::ranges::input_range and in the "reading a file" section you already saw a few examples of how to pipe a view onto
-such a range. The output files model std::ranges::output_range and with that, we can use ranges algorithm like
+such a range. The output files model std::ranges::output_range. This allows us to use ranges algorithms like
 std::ranges::move to "move" records from input to output files.
 
 \cond DEV

@@ -12,7 +12,7 @@ of what to expect in the other tutorials and how to use this documentation.
 before the current one. You should also have a look at the links provided in "recommended reading" and maybe keep
 them open in separate tabs/windows as reference.*
 
-***These tutorials try to briefly introduce C++ features not well known, however, they do not teach programming in C++!
+***These tutorials try to briefly introduce C++ features not well known. However, they do not teach programming in C++!
 If you know how to program in another language, but are not familiar with C++ and/or the significant
 changes in the language in recent years, we recommend the following resources:***
 
@@ -154,7 +154,7 @@ to learn more.
 
 \note
 We encourage you to avoid declaring `using namespace seqan3;`. This has the additional benefit of easily distinguishing
-between library features and standard C++. The only exceptions are string literals, where we often use
+between library features and standard C++. The only exception are string literals, where we often use
 `using namespace seqan3::literals` for convenience.
 
 \note

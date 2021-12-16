@@ -25,7 +25,7 @@ What about the two examples that suggest superiority of the iterator-based appro
   * sorting only all elements after the fifth one: `std::ranges::sort(std::views::drop(v, 5))`
   * sorting in reverse order: `std::ranges::sort(std::views::reverse(v))`
 
-We will discuss later what `std::views::reverse(v)` does, for now, it is enough to understand that it returns something
+We will discuss later what `std::views::reverse(v)` does. For now, it is enough to understand that it returns something
 that appears like a container and that std::ranges::sort can sort it.
 Later we will see that this approach offers even more flexibility than working with iterators.
 
@@ -125,8 +125,8 @@ std::views::reverse v{vec};
 That's because `std::views::reverse` is not the view itself, it's an *adaptor* that takes the underlying range
 (in our case the vector) and returns a view object over the vector.
 The exact type of this view is hidden behind the `auto` statement.
-This has the advantage that we don't need to worry about the template arguments of the view type, but more importantly
-the adaptor has an additional feature: it can be *chained* with other adaptors!
+This has the advantage that we don't need to worry about the template arguments of the view type.
+The adaptor has another, very useful feature: it can be *chained* with other adaptors!
 
 \snippet doc/tutorial/ranges/range_snippets.cpp piped
 

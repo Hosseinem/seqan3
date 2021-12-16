@@ -40,7 +40,7 @@ the beginning of our file. We also import the seqan3::debug_stream which allows 
 formatted manner.
 
 At the beginning of the file, we are defining our two DNA sequences `s1` and `s2`.
-If you feel puzzled about what the `_dna4` suffix does we recommend reading the \ref tutorial_alphabets and
+If you feel puzzled about what the `_dna4` suffix does, we recommend reading the \ref tutorial_alphabets and
 \ref tutorial_ranges before.
 In line 16-17 we configure the alignment job with the most simplistic configuration possible.
 In this case, it is a global alignment with edit distance.
@@ -209,7 +209,7 @@ the assignment. Et voilà, we have computed a pairwise alignment over aminoacid 
 
 ## Alignment result
 
-So far we have only used the score, but obviously, in many situations the final alignment is required, e.g. when
+So far, we have only used the score. However, in many situations the final alignment is required, e.g. when
 mapping reads and the user wishes to write the alignment to the final SAM/BAM file.
 In SeqAn you can simply configure what is going to be computed by the alignment algorithm using the
 different \ref seqan3_align_cfg_output_configurations "output configurations".
@@ -260,8 +260,8 @@ overlaps between two sequences can be computed which is a common use case during
 
 In many situations it is not necessary to compute the entire alignment matrix but only a part of it. This has
 positive impacts on the performance. To limit the computation space the alignment matrix can be bounded by a band.
-Thus, only the alignment is computed that fits in this band. Note that this must not be the optimal alignment but in
-many cases, we can give a rough bound on how similar the sequences will be and therefor use the banded alignment.
+Thus, only the alignment is computed that fits in this band. Notably, this alignment does not need to be the optimal alignment.
+However, in many cases, we can give a rough bound on how similar the sequences will be and therefor use the banded alignment.
 To do so, you can configure the alignment using the seqan3::align_cfg::band_fixed_size option. This configuration
 element will be initialised with a seqan3::align_cfg::lower_diagonal and seqan3::align_cfg::upper_diagonal parameter.
 

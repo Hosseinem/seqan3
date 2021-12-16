@@ -16,7 +16,7 @@ SAM files are used to store pairwise alignments between two (biological) sequenc
 like BLAST, which can store sequence alignments, but in this tutorial we will focus on SAM/BAM files.
 In addition to the alignment, these formats store information such as the start positions or mapping qualities.
 SAM files are a little more complex than sequence files but the basic design is the same.
-If you are new to SeqAn, we strongly recommend doing the tutorial \ref tutorial_sequence_file first.
+If you are new to SeqAn, we strongly recommend completing the tutorial \ref tutorial_sequence_file first.
 
 # SAM/BAM file formats
 
@@ -222,7 +222,7 @@ Only use
 
 With that information do the following:
   * Filter the alignment records and only take those with a mapping quality >= 30.
-    (Take a look at the tutorial \ref sequence_file_section_fun_with_ranges for a reminder of how to use views on files)
+    (Take a look at the tutorial \ref sequence_file_section_fun_with_ranges for a reminder about using views on files)
   * For the resulting alignments, print which read was mapped against which reference id and
     the number of `seqan3::gap`s in each sequence (aligned reference and read sequence).
 
@@ -254,7 +254,7 @@ For this purpose, you can use the seqan3::sam_record to write out a partial reco
 \snippet doc/tutorial/sam_file/sam_file_writing.cpp main
 
 Note that this only works because in the SAM format **all fields are optional**.
-So if we provide fewer fields when writing, default values are written.
+If we provide fewer fields when writing, default values are written.
 
 \assignment{Assignment 3: Writing id and sequence information}
 

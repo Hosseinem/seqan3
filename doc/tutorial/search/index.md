@@ -86,7 +86,7 @@ You are given the text
 dna4_vector text{"CGCTGTCTGAAGGATGAGTGTCAGCCAGTGTAACCCGATGAGCTACCCAGTAGTCGAACTGGGCCAGACAACCCGGCGCTAATGCACTCA"_dna4};
 \endcode
 Create a seqan3::fm_index over the reference, store the index and load the index into a new seqan3::fm_index object.
-Print whether the indices are identical or different.
+Print whether the indices are identical or differ.
 \endassignment
 
 \solution
@@ -316,7 +316,7 @@ range, the actual search for every query is triggered. We have done this automat
 printing the result to the seqan3::debug_stream which then invokes a range based iteration over the returned range or
 by using the std::ranges::distance algorithm. However, in many cases, we want to access the specific positions and
 information stored in the seqan3::search_result object to proceed with our application. Since some information might be
-more compute intensive then others, there is a way to control what the final search result object will contain.
+more compute-intensive than others, there is a way to control what the final search result object will contain.
 
 ### Output configuration
 
